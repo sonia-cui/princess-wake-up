@@ -1,0 +1,25 @@
+/* Design tokens: soft, premium, girl-ish but grown-up.
+   Ivory-blush paper, plum ink, a dusty-rose accent; serif display type. */
+:root {
+  --bg: #fbf6f3;
+  --bg-deep: #f6ebe6;
+  --surface: #ffffff;
+  --surface-2: #f8f0ed;
+  --ink: #2f2430;
+  --muted: #8c7a83;
+  --line: #ecdfda;
+  --rose: #bf7287;
+  --rose-deep: #a65a70;
+  --rose-soft: #f5e3e7;
+  --gold: #c2a26a;
+  --danger: #b4504f;
+
+  --font-display: 'Didot', 'Bodoni 72', 'Playfair Display', 'Noto Serif SC', 'Songti SC', 'STSong', 'SimSun', Georgia, serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;
+
+  --radius: 18px;
+  --radius-sm: 12px;
+  --shadow: 0 1px 2px rgba(80, 40, 60, 0.04), 0 8px 24px rgba(80, 40, 60, 0.06);
+  --tabbar-h: 64px;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
