@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>公主，请起床！</title>
+  <!-- Google fonts for cute typography -->
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-title">
+      <i class="fa-solid fa-crown"></i>
+      <h1>公主，请起床！</h1>
+    </div>
+    <p class="subtitle">你的个人成长计划</p>
+  </header>
+  <main>
+    <section class="plan-section">
+      <h2>选择你的目标</h2>
+      <div class="plan-options">
+        <label><input type="checkbox" value="weight"> 减肥</label>
+        <label><input type="checkbox" value="beauty"> 美丽</label>
+        <label><input type="checkbox" value="growth"> 成长</label>
+        <label><input type="checkbox" value="custom"> 自定义</label>
+      </div>
+      <div id="custom-plan-input" class="custom-plan-input hidden">
+        <input type="text" id="custom-plan-name" placeholder="输入自定义目标，如练琴" />
+        <button id="add-custom-plan" class="btn-small">添加</button>
+      </div>
+      <button id="start-plan" class="btn-primary">生成每日计划</button>
+    </section>
+    <!-- Initially hidden by CSS only; remove hidden class to allow JS to toggle display -->
+    <section id="task-section" class="task-section">
+      <h2>今天的任务</h2>
+      <ul id="task-list" class="task-list"></ul>
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+      <div class="buttons">
+        <button id="add-task-btn" class="btn-secondary"><i class="fa-solid fa-plus"></i> 添加任务</button>
+        <button id="new-day-btn" class="btn-secondary"><i class="fa-solid fa-sun"></i> 新的一天</button>
+      </div>
+    </section>
+    <!-- Modal for adding new task -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h3>添加新任务</h3>
+        <input type="text" id="new-task-text" placeholder="任务名称" />
+        <button id="save-task" class="btn-primary">保存</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>© 2026 公主，请起床！</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
