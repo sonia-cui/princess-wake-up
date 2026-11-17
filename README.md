@@ -2,6 +2,8 @@
 
 > 开始养成更高配的自己。
 
+**在线体验：https://sonia-cui.github.io/princess-wake-up/**（建议用手机打开，或把浏览器窗口调窄）
+
 一款把**女性自我成长**做成养成游戏的轻量 Web App：每天收到几件小任务，完成后 Beauty、Aura、Charm、Money、Power 五项属性即时成长，连续打卡、解锁成就，看见自己一点点变好。
 
 它不是恋爱或儿童养成游戏，而是 gamified self-improvement：任务都是现实生活里的小事（护肤、运动、阅读、记账、联系朋友），游戏化只负责让坚持更有反馈。
@@ -34,7 +36,7 @@
 npm install
 npm run dev      # 本地开发，打开终端里显示的地址
 npm test         # 运行游戏逻辑单元测试
-npm run build    # 生成 dist/，可直接部署到 GitHub Pages 等静态托管
+npm run build    # 生成 dist/，可直接部署到 GitHub Pages 等静态托管（在线版部署在 gh-pages 分支）
 ```
 
 想看有几天数据的效果：`node scripts/make-demo-state.mjs`，把输出的 JSON 存进浏览器 localStorage 的 `princess-wake-up/v1` 键。脚本用的是真实的游戏逻辑，只是模拟了前几天的操作。
